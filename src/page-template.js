@@ -7,11 +7,11 @@ const generateTeam = team => {
     const generateManager = manager => {
         return `
         <div class="card employee-card">
-        <div class="card-header">
+        <div class="card-header bg-primary text-white ">
             <h2 class="card-title">${manager.getName()}</h2>
             <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
         </div>
-        <div class="card-body">
+        <div class="card-body ">
             <ul class="list-group">
                 <li class="list-group-item">ID: ${manager.getId()}</li>
                 <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
@@ -26,7 +26,7 @@ const generateTeam = team => {
     const generateEngineer = engineer => {
         return `
         <div class="card employee-card">
-    <div class="card-header">
+    <div class="card-header bg-primary text-white">
         <h2 class="card-title">${engineer.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
     </div>
@@ -45,7 +45,7 @@ const generateTeam = team => {
     const generateIntern = intern => {
         return `
         <div class="card employee-card">
-    <div class="card-header">
+    <div class="card-header bg-primary text-white">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
     </div>
@@ -95,14 +95,14 @@ module.exports = team => {
     <title>My Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
+        <div class="row ">
+            <div class="col-12 jumbotron mb-3 bg-danger  text-white team-heading ">
                 <h1 class="text-center">My Team</h1>
             </div>
         </div>
